@@ -1,3 +1,4 @@
+const ChromeExtensionReloader  = require('webpack-chrome-extension-reloader');
 const CopyPlugin = require('copy-webpack-plugin');
 const path = require('path');
 const webpack = require('webpack');
@@ -51,6 +52,7 @@ module.exports = {
     new CopyPlugin([
       { from: './src/extension/manifest.json', to: './manifest.json' },
     ]),
+    new ChromeExtensionReloader(),
   ],
   output: {
     path: path.join(__dirname, 'dist'),

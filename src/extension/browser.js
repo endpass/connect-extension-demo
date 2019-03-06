@@ -16,3 +16,19 @@ Object.assign(window, {
   ethereum: web3.currentProvider,
   web3,
 });
+
+const messageHandlers = {
+  openAccount() {
+    connect.openAccount();
+  },
+};
+
+window.addEventListener('message', request => {
+  const { scope, to, method } = request.data;
+  if (scope !== 'endpass' || to !== 'browser') {
+    return;
+  }
+  const handler = messageHandlers[method];
+  // eslint-disable-next-line
+  handler && handler();
+});

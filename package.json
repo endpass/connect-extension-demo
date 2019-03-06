@@ -17,7 +17,7 @@
   "homepage": "https://github.com/endpass/connect-extension-demo",
   "scripts": {
     "build": "NODE_ENV=production webpack -p",
-    "dev": "NODE_ENV=development webpack",
+    "dev": "NODE_ENV=development webpack --mode=development --watch --watch-poll",
     "test": "jest",
     "format": "prettier --write './src/**/*.{js,json}' && eslint ./src/**/*.{js} --fix",
     "semantic-release": "semantic-release",
@@ -102,6 +102,7 @@
     "semantic-release": "^15.13.3",
     "style-loader": "^0.23.1",
     "webpack": "^4.29.6",
+    "webpack-chrome-extension-reloader": "^1.2.0",
     "webpack-cli": "^3.2.3",
     "webpack-dev-server": "3.2.1",
     "write-file-webpack-plugin": "4.5.0"

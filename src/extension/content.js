@@ -18,4 +18,18 @@ function addScripts(list, cb) {
   });
 }
 
-addScripts(['browser.js', 'injected.js'], function() {});
+const loadScripts = ['browser.js', 'injected.js'];
+addScripts(loadScripts, function() {});
+
+const scriptsMap = loadScripts.reduce((map, item) => {
+  const key = item.split('.')[0];
+  // eslint-disable-next-line
+  map[key] = true;
+  return map;
+}, {});
+
+chrome.runtime.onMessage.addListener(function(request) {
+  if (scriptsMap[request.to]) {
+    window.postMessage(request, '*');
+  }
+});

@@ -7,6 +7,7 @@ const auth = {
 };
 
 module.exports = {
+  isProduction: true,
   auth,
   infura,
 };
