@@ -51,6 +51,7 @@ module.exports = {
     }),
     new CopyPlugin([
       { from: './src/extension/manifest.json', to: './manifest.json' },
+      { from: './src/extension/images', to: './images' },
     ]),
     new ChromeExtensionReloader(),
   ],
