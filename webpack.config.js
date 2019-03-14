@@ -1,4 +1,4 @@
-const ChromeExtensionReloader  = require('webpack-chrome-extension-reloader');
+const ChromeExtensionReloader = require('webpack-chrome-extension-reloader');
 const CopyPlugin = require('copy-webpack-plugin');
 const path = require('path');
 const webpack = require('webpack');
@@ -11,6 +11,9 @@ function resolveFile(file) {
 const ENV = getEnv(process.env.NODE_ENV);
 
 module.exports = {
+  node: {
+    fs: 'empty',
+  },
   entry: {
     browser: resolveFile('./src/extension/browser.js'),
     background: resolveFile('./src/extension/background.js'),

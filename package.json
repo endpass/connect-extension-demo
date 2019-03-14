@@ -60,6 +60,7 @@
     }
   },
   "dependencies": {
+    "@endpass/class": "^0.8.1",
     "@endpass/connect": "^0.15.8-beta",
     "lodash.get": "^4.4.2",
     "lodash.omit": "^4.5.0",
