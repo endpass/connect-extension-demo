@@ -755,12 +755,12 @@
   dependencies:
     find-up "^2.1.0"
 
-"@endpass/class@^0.8.1":
-  version "0.8.1"
-  resolved "https://registry.yarnpkg.com/@endpass/class/-/class-0.8.1.tgz#b831cc6431bd9e899c91eeb45b294f1630878476"
-  integrity sha512-dy4BfFHs4KwwkA4GTIB3gCo24cym/SVgyYrgI+0eYQ+PmKVaiAQmqShSAtiESyaHmSbH6JumA4+k0RG23S5sMw==
+"@endpass/class@^0.9.4":
+  version "0.9.4"
+  resolved "https://registry.yarnpkg.com/@endpass/class/-/class-0.9.4.tgz#bd321f8518ebd4ae0fd535908bfab59d54c179c4"
+  integrity sha512-ReQ1ObeoSzRjt2c52Qlyd3CNBgbh/7zzwTFi3SKCqWJJAUFEqFFe7yWUyW3NGV92do/IdgjSSSngqZzmNjurrA==
   dependencies:
-    "@endpass/utils" "^1.1.2"
+    "@endpass/utils" "^1.2.1"
     "@ledgerhq/hw-app-eth" "^4.24.0"
     "@ledgerhq/hw-transport-u2f" "^4.24.0"
     bignumber.js "^7.2.1"
@@ -777,16 +777,17 @@
     web3-providers-ws "1.0.0-beta.33"
     web3-utils "1.0.0-beta.33"
 
-"@endpass/connect@^0.15.8-beta":
-  version "0.15.8-beta"
-  resolved "https://registry.yarnpkg.com/@endpass/connect/-/connect-0.15.8-beta.tgz#7219a823bac0a89726647dbad1335b0fa8186a97"
-  integrity sha512-O2ct5ywcfQXj9Kwl803LK4fu0WlqKkoRnpGgAoIfw7HZniPjZLrDF9RSI8gdYNjSiBmWsA8WPFnAkJ5t3Ohfiw==
+"@endpass/connect@^0.16.0-beta":
+  version "0.16.0-beta"
+  resolved "https://registry.yarnpkg.com/@endpass/connect/-/connect-0.16.0-beta.tgz#27f0cafe2a268e8c192a78e73e53aed9ffb57e4f"
+  integrity sha512-8M66OFP9TRRqSUpvwx1aQ5t8xgtAr1rg8w3KoQhOZ9IJ5SqHj0AstbAjA4kR46Cx19DPQCEkm2o1K5IB/8BJkQ==
   dependencies:
+    "@endpass/class" "^0.9.4"
     lodash.get "^4.4.2"
-    lodash.omit "^4.5.0"
+    utility-types "^3.4.1"
     web3-providers-http "1.0.0-beta.33"
 
-"@endpass/utils@^1.1.2":
+"@endpass/utils@^1.2.1":
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/@endpass/utils/-/utils-1.2.1.tgz#3f25df77fad9967b8bfdcbd185cdb1ebdaa78ddb"
   integrity sha512-RbLONPn+2yfT4O3Y9ilNRbFyxHL1bD3NX5zuiSOYFgaffzJwVU7zDWq4vrvw0hXQG6GP4fNRlaEBOQ+ZGQAX1A==
@@ -6727,11 +6728,6 @@ lodash.map@^4.5.1:
   resolved "https://registry.yarnpkg.com/lodash.map/-/lodash.map-4.6.0.tgz#771ec7839e3473d9c4cde28b19394c3562f4f6d3"
   integrity sha1-dx7Hg540c9nEzeKLGTlMNWL09tM=
 
-lodash.omit@^4.5.0:
-  version "4.5.0"
-  resolved "https://registry.yarnpkg.com/lodash.omit/-/lodash.omit-4.5.0.tgz#6eb19ae5a1ee1dd9df0b969e66ce0b7fa30b5e60"
-  integrity sha1-brGa5aHuHdnfC5aeZs4Lf6MLXmA=
-
 lodash.set@^4.3.2:
   version "4.3.2"
   resolved "https://registry.yarnpkg.com/lodash.set/-/lodash.set-4.3.2.tgz#d8757b1da807dde24816b0d6a84bea1a76230b23"
@@ -10914,6 +10910,11 @@ utila@^0.4.0, utila@~0.4:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/utila/-/utila-0.4.0.tgz#8a16a05d445657a3aea5eecc5b12a4fa5379772c"
   integrity sha1-ihagXURWV6Oupe7MWxKk+lN5dyw=
+
+utility-types@^3.4.1:
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/utility-types/-/utility-types-3.4.1.tgz#3caa1d207eac873f989bf8c92cf3e8c539045c61"
+  integrity sha512-GyH068kJf7c4vhfqj4aCM5X+TeV8jG2iPFLimpGpnQ7dvKfogZOHfiYxMww/nGEfMm/bEmnVbeZGO1see1OVKg==
 
 utils-merge@1.0.1:
   version "1.0.1"

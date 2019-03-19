@@ -1,6 +1,6 @@
 {
   "name": "connect-extension-demo",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "repository": {
     "type": "git",
@@ -60,10 +60,8 @@
     }
   },
   "dependencies": {
-    "@endpass/class": "^0.8.1",
-    "@endpass/connect": "^0.15.8-beta",
-    "lodash.get": "^4.4.2",
-    "lodash.omit": "^4.5.0",
+    "@endpass/class": "^0.9.4",
+    "@endpass/connect": "^0.16.0-beta",
     "web3": "1.0.0-beta.37"
   },
   "devDependencies": {
