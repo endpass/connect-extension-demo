@@ -61,7 +61,7 @@
   },
   "dependencies": {
     "@endpass/class": "^0.9.4",
-    "@endpass/connect": "^0.16.0-beta",
+    "@endpass/connect": "^0.16.1-beta",
     "web3": "1.0.0-beta.37"
   },
   "devDependencies": {
