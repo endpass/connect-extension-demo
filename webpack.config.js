@@ -1,3 +1,4 @@
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const ChromeExtensionReloader = require('webpack-chrome-extension-reloader');
 const CopyPlugin = require('copy-webpack-plugin');
 const path = require('path');
@@ -9,6 +10,7 @@ function resolveFile(file) {
 }
 
 const ENV = getEnv(process.env.NODE_ENV);
+const isProd = process.env.NODE_ENV === 'production';
 
 module.exports = {
   node: {
@@ -57,6 +59,11 @@ module.exports = {
       { from: './src/extension/images', to: './images' },
     ]),
     new ChromeExtensionReloader(),
+    // !isProd &&
+    //   new BundleAnalyzerPlugin({
+    //     analyzerMode: 'static',
+    //     generateStatsFile: true,
+    //   }),
   ],
   output: {
     path: path.join(__dirname, 'dist'),

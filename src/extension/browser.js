@@ -1,7 +1,7 @@
 import '@babel/polyfill';
 import Web3 from 'web3';
 import EndpassConnect from '@endpass/connect';
-import { Network } from '@endpass/class';
+import Network from '@endpass/class/Network';
 import { MESSAGE } from '@/constants';
 
 const web3 = new Web3(Network.NETWORK_URL_HTTP[Network.NET_ID.MAIN][0]);

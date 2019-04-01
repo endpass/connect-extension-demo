@@ -16,8 +16,8 @@
   },
   "homepage": "https://github.com/endpass/connect-extension-demo",
   "scripts": {
-    "build": "NODE_ENV=production webpack -p",
     "dev": "NODE_ENV=development webpack --mode=development --watch --watch-poll",
+    "build": "rimraf ./dist && NODE_ENV=production webpack -p",
     "test": "jest",
     "format": "prettier --write './src/**/*.{js,json}' && eslint ./src/**/*.{js} --fix",
     "semantic-release": "semantic-release",
@@ -60,7 +60,7 @@
     }
   },
   "dependencies": {
-    "@endpass/class": "^0.9.4",
+    "@endpass/class": "^0.10.0",
     "@endpass/connect": "^0.16.1-beta",
     "web3": "1.0.0-beta.37"
   },
@@ -101,6 +101,7 @@
     "semantic-release": "^15.13.3",
     "style-loader": "^0.23.1",
     "webpack": "^4.29.6",
+    "webpack-bundle-analyzer": "^3.1.0",
     "webpack-chrome-extension-reloader": "^1.2.0",
     "webpack-cli": "^3.2.3",
     "webpack-dev-server": "3.2.1",
