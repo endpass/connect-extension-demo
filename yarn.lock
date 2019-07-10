@@ -895,7 +895,7 @@
   dependencies:
     find-up "^2.1.0"
 
-"@endpass/class@^0.14.4", "@endpass/class@^0.14.5":
+"@endpass/class@^0.14.5":
   version "0.14.5"
   resolved "https://registry.yarnpkg.com/@endpass/class/-/class-0.14.5.tgz#66b4940c8f5a9bb9063c5e51b69f32a4fdf9e6e1"
   integrity sha512-Yfr+3PMeUXiW1OYSYHalxvx5mZK0gYtsq2BzfnHnxew17FdOROmZHCVbdq/Ihkrf08XjxmjBv2Jz7BQZeCD7ww==
@@ -917,15 +917,38 @@
     web3-providers-ws "1.0.0-beta.33"
     web3-utils "1.0.0-beta.33"
 
-"@endpass/connect@^0.22.1-beta":
-  version "0.22.1-beta"
-  resolved "https://registry.yarnpkg.com/@endpass/connect/-/connect-0.22.1-beta.tgz#43042c9340ff58d854301c7b7734cd5c35bd41fb"
-  integrity sha512-hw+0ESBckljHUiwobU4Jb73SiRSPi2xcHUWVin9VGiRcKwQv6OW5CFVBux6OcMK79lSsVQZyRvnmaN6akqWckQ==
+"@endpass/class@^0.14.6":
+  version "0.14.6"
+  resolved "https://registry.yarnpkg.com/@endpass/class/-/class-0.14.6.tgz#11ed4f1c9b561897a06efbdb7bdfdc52941d3018"
+  integrity sha512-PeQhLrJzdpQU81BZyoGtAdHmhiGKCuOhi3sHOBrdvZAkSbC6xgwcKAckRRysfkGRsutOBhjpvr0GeUWSsf5bkA==
   dependencies:
-    "@endpass/class" "^0.14.4"
     "@endpass/utils" "^1.4.2"
+    "@ledgerhq/hw-app-eth" "^4.24.0"
+    "@ledgerhq/hw-transport-u2f" "^4.24.0"
+    bignumber.js "^7.2.1"
+    dexie "^2.0.4"
+    eth-ens-namehash "^2.0.8"
+    ethereumjs-tx "^1.3.4"
+    ethereumjs-wallet "^0.6.0"
+    lodash "^4.17.11"
+    path-to-regexp "^2.4.0"
+    trezor-connect "^6.0.0"
+    web3 "1.0.0-beta.33"
+    web3-providers-http "1.0.0-beta.33"
+    web3-providers-ipc "1.0.0-beta.33"
+    web3-providers-ws "1.0.0-beta.33"
+    web3-utils "1.0.0-beta.33"
+
+"@endpass/connect@^0.25.1-beta":
+  version "0.25.1-beta"
+  resolved "https://registry.yarnpkg.com/@endpass/connect/-/connect-0.25.1-beta.tgz#40ab03dc68ddb451f2a29897bf88808e11f99e4d"
+  integrity sha512-aB0mS3w+1b5KrOYXzmAa8meMkqbDKby5aCflvLJsyCuBJWNzfYd9RMLFxe7pAttTAf7l3E2nX2ywC/xM1dYuGA==
+  dependencies:
+    "@endpass/class" "^0.14.6"
+    "@endpass/utils" "^1.7.0"
     axios "^0.19.0"
     axios-token-interceptor "^0.1.0"
+    lodash.debounce "^4.0.8"
     lodash.get "^4.4.2"
     utility-types "^3.7.0"
     web3-providers-http "1.0.0-beta.33"
@@ -934,6 +957,22 @@
   version "1.6.1"
   resolved "https://registry.yarnpkg.com/@endpass/utils/-/utils-1.6.1.tgz#c9c6aab5886ab09c5b9d3c5e576e7208bc688450"
   integrity sha512-DENybNiWzVVDs/rQvuwuViDkko4aZwr6Dsxw8bwtjxHO1hFtPVRD4+hTaFIl75wLISNaNhGi5B6G4dfiekpoIg==
+  dependencies:
+    bip39 "^3.0.2"
+    bs58check "^2.1.2"
+    dayjs "^1.8.14"
+    eth-ecies "^1.0.3"
+    ethereumjs-wallet "^0.6.3"
+    export-files "^2.1.1"
+    keythereum "^1.0.4"
+    lodash "^4.17.11"
+    node-notifier "^5.4.0"
+    secp256k1 "^3.7.0"
+
+"@endpass/utils@^1.7.0":
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/@endpass/utils/-/utils-1.8.0.tgz#075db12aaf102c2fb77762e9c03685be10e5d6db"
+  integrity sha512-F29NrYWkC2333qfycXdCWoz53IzJDq+4dfvIdqLNOgnuccoyTE8mEoFspo1X5Zi7sjy5PH1uVbxVY9JyTWFGDg==
   dependencies:
     bip39 "^3.0.2"
     bs58check "^2.1.2"
@@ -7420,6 +7459,11 @@ lodash.clonedeep@~4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.clonedeep/-/lodash.clonedeep-4.5.0.tgz#e23f3f9c4f8fbdde872529c1071857a086e5ccef"
   integrity sha1-4j8/nE+Pvd6HJSnBBxhXoIblzO8=
+
+lodash.debounce@^4.0.8:
+  version "4.0.8"
+  resolved "https://registry.yarnpkg.com/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
+  integrity sha1-gteb/zCmfEAF/9XiUVMArZyk168=
 
 lodash.escaperegexp@^4.1.2:
   version "4.1.2"

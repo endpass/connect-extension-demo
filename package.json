@@ -1,6 +1,6 @@
 {
   "name": "connect-extension-demo",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "repository": {
     "type": "git",
@@ -62,7 +62,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.4.4",
     "@endpass/class": "^0.14.5",
-    "@endpass/connect": "^0.22.1-beta",
+    "@endpass/connect": "^0.25.1-beta",
     "web3": "1.0.0-beta.37"
   },
   "devDependencies": {
