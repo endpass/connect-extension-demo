@@ -1,4 +1,3 @@
-import '@babel/polyfill';
 import Web3 from 'web3';
 import EndpassConnect from '@endpass/connect';
 import Network from '@endpass/class/Network';

@@ -60,9 +60,9 @@
     }
   },
   "dependencies": {
-    "@babel/polyfill": "^7.4.4",
     "@endpass/class": "^0.14.5",
     "@endpass/connect": "^0.25.1-beta",
+    "core-js": "3",
     "web3": "1.0.0-beta.37"
   },
   "devDependencies": {
