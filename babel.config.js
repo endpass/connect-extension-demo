@@ -7,6 +7,8 @@ module.exports = {
           browsers: ['> 1%', 'last 2 versions'],
         },
         modules: false,
+        useBuiltIns: 'usage',
+        corejs: { version: 3, proposals: true },
       },
     ],
   ],
