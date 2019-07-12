@@ -8,7 +8,7 @@ const web3 = new Web3(Network.NETWORK_URL_HTTP[Network.NET_ID.MAIN][0]);
 
 const connect = new EndpassConnect({
   authUrl: ENV.auth.url,
-  widget: false,
+  // widget: false,
   oauthClientId: 'should_replace_by_real_token',
 });
 
