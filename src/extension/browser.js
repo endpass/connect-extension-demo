@@ -1,9 +1,6 @@
-import Web3 from 'web3';
 import EndpassConnect from '@endpass/connect';
-import Network from '@endpass/class/Network';
 import { MESSAGE } from '@/constants';
-
-const web3 = new Web3(Network.NETWORK_URL_HTTP[Network.NET_ID.MAIN][0]);
+import proxyProvider from '@/proxyProvider';
 
 const connect = new EndpassConnect({
   authUrl: ENV.auth.url,
@@ -11,13 +8,8 @@ const connect = new EndpassConnect({
   oauthClientId: 'should_replace_by_real_token',
 });
 
-const provider = connect.getProvider();
-web3.setProvider(provider);
-
-Object.assign(window, {
-  ethereum: web3.currentProvider,
-  web3,
-});
+const provider = proxyProvider.wrapEnable(connect.getProvider());
+proxyProvider.useDefaultWeb3(provider);
 
 const messageHandlers = {
   openAccount() {
