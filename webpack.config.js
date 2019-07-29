@@ -17,7 +17,11 @@ module.exports = {
     fs: 'empty',
   },
   entry: {
-    browser: resolveFile('./src/extension/browser.js'),
+    browser: [
+      'core-js/stable',
+      'regenerator-runtime/runtime',
+      resolveFile('./src/extension/browser.js'),
+    ],
     background: resolveFile('./src/extension/background.js'),
     content: resolveFile('./src/extension/content.js'),
     injected: resolveFile('./src/extension/injected.js'),
@@ -35,17 +39,6 @@ module.exports = {
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
-          options: {
-            plugins: [
-              [
-                '@babel/plugin-transform-runtime',
-                {
-                  helpers: true,
-                  regenerator: true,
-                },
-              ],
-            ],
-          },
         },
       },
     ],
