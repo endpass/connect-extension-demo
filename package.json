@@ -98,7 +98,7 @@
     "lint-staged": "^9.2.1",
     "prettier": "^1.18.2",
     "rimraf": "^2.6.3",
-    "semantic-release": "^15.13.18",
+    "semantic-release": "^17.2.3",
     "style-loader": "^0.23.1",
     "webpack": "^4.38.0",
     "webpack-bundle-analyzer": "^3.3.2",
